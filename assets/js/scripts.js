@@ -1,0 +1,7 @@
+(function ($) {
+
+	$(document).foundation();
+
+})(jQuery);
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9pbml0LWZvdW5kYXRpb24uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6InNjcmlwdHMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIoZnVuY3Rpb24gKCQpIHtcblxuXHQkKGRvY3VtZW50KS5mb3VuZGF0aW9uKCk7XG5cbn0pKGpRdWVyeSk7XG4iXX0=

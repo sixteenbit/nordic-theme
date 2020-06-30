@@ -1,0 +1,37 @@
+// ------------------------------------------------------------------------------
+// This file contains all styles related to the widgets of the site/application.
+// ------------------------------------------------------------------------------
+.widget {
+
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+}
+
+.widget_recent_entries,
+.widget_categories {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      font-size: rem-calc(14);
+      color: $secondary-color;
+
+
+      & > a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.widget_categories {
+  .current-cat {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,167 @@
+// -------------------------------------------------------------------------------------
+// This file contains all styles related to the posts and pages of the site/application.
+// -------------------------------------------------------------------------------------
+$post-header-background: #f8f8f8;
+
+.is-singular {
+
+  .entry-header {
+    margin-bottom: rem-calc(32);
+    padding-top: rem-calc(32);
+    padding-bottom: rem-calc(32);
+    background-color: $post-header-background;
+    text-align: center;
+
+    @include breakpoint(medium up) {
+      margin-bottom: rem-calc(64);
+      padding-top: rem-calc(64);
+      padding-bottom: rem-calc(64);
+    }
+  }
+
+  .entry-title {
+    margin-bottom: 0;
+    font-weight: 700;
+
+    @include breakpoint(medium up) {
+      font-size: rem-calc(36);
+    }
+  }
+
+  .post-thumbnail {
+
+    img {
+      max-width: rem-calc(940);
+      margin: 0 auto rem-calc(64);
+    }
+  }
+}
+
+.sticky-post {
+  display: block;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.post-thumbnail {
+  &:focus {
+    outline: none;
+  }
+
+  img {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}
+
+.entry-profile-pic {
+  margin-bottom: $global-margin;
+  font-size: rem-calc(13);
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: rem-calc(5);
+    border-radius: 100%;
+  }
+}
+
+.entry-meta {
+  @include clearfix();
+  font-size: rem-calc(11);
+
+  .entry-date {
+    line-height: 1;
+  }
+
+  .post-categories {
+    @include menu-base();
+    @include menu-simple($margin: 0);
+    float: left;
+
+    & > li {
+      & > a {
+        padding: rem-calc(5);
+      }
+    }
+  }
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  padding-bottom: rem-calc(64);
+
+  p {
+    word-wrap: break-word;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 $global-margin;
+}
+
+.post-nav-links {
+  @include clearfix;
+  margin-#{$global-left}: 0;
+  margin-bottom: $pagination-margin-bottom;
+
+  a {
+    margin-#{$global-right}: $pagination-item-spacing;
+    padding: $pagination-item-padding;
+    border-radius: $pagination-radius;
+    font-size: $pagination-font-size;
+    color: $pagination-item-color;
+
+    &:hover {
+      background: $pagination-item-background-hover;
+    }
+
+    @if $pagination-mobile-items {
+      display: inline-block;
+    } @else {
+      display: none;
+
+      &:last-child,
+      &:first-child {
+        display: inline-block;
+      }
+
+      @include breakpoint(medium) {
+        display: inline-block;
+      }
+    }
+  }
+
+  .current {
+    display: inline-block;
+    padding: $pagination-item-padding;
+    background: $pagination-item-background-current;
+    font-size: $pagination-font-size;
+    color: $pagination-item-color-current;
+    cursor: default;
+  }
+}
+
+.edit-link {
+  display: block;
+  margin-top: $global-margin;
+
+  .post-edit-link {
+    @include button(
+      $background: $button-background,
+      $background-hover: $button-background-hover,
+      $color: $button-color
+    );
+    font-size: 0.6rem;
+  }
+}

@@ -1,0 +1,17 @@
+$archive-header-background: #f8f8f8;
+
+.archive-header,
+.page-header {
+  margin-bottom: rem-calc(64);
+  padding-top: rem-calc(64);
+  padding-bottom: rem-calc(64);
+  background-color: $archive-header-background;
+  text-align: center;
+}
+
+.archive-title,
+.page-title {
+  margin-bottom: 0;
+  font-size: rem-calc(36);
+  font-weight: 700;
+}

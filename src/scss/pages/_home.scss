@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the blog.
+// -----------------------------------------------------------------------------
+.blog,
+.archive {
+
+  .hentry {
+    position: relative;
+    margin-bottom: $global-margin * 2;
+    box-shadow: 0 0 0 1px rgba(56, 60, 67, .05), 0 1px 3px 0 rgba(56, 60, 67, .15);
+    transition: box-shadow 0.25s ease-out;
+
+    @include on-event() {
+      box-shadow: 0 0 0 1px rgba(56, 60, 67, .07), 0 8px 14px 1px rgba(56, 60, 67, .15);
+    }
+  }
+
+  .entry-header {
+    margin-bottom: 0;
+    padding: $global-padding;
+  }
+
+  h2.entry-title {
+    font-size: rem-calc(18);
+
+    & > a {
+      font-weight: 700;
+      color: $header-color;
+    }
+  }
+
+  .entry-content,
+  .entry-footer {
+    @include clearfix();
+    padding: $global-padding;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .entry-content {
+    margin-top: 0;
+    font-size: rem-calc(14);
+  }
+
+  .entry-footer {
+
+    .entry-meta {
+      float: right;
+    }
+  }
+
+  .entry-profile-pic {
+    float: left;
+    margin-bottom: 0;
+
+    .avatar {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

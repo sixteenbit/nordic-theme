@@ -1,0 +1,51 @@
+/*!
+Theme Name: Nordic
+Theme URI: http://github.com/sixteenbit/nordic-theme
+Author: Sixteenbit
+Author URI: https://sixteenbit.com
+Description: Custom theme: Nordic, developed by Sixteenbit.
+Version: 0.1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: nordic-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+// 1. Configuration and helpers
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+// 2. Vendors
+@import 'vendors/foundation/foundation-components';
+
+// 3. Base stuff
+@import 'base/base';
+
+// 4. Layout-related sections
+@import 'layout/site';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/widgets';
+
+// 5. Components
+@import 'components/accessibility';
+@import 'components/alignments';
+@import 'components/captions';
+@import 'components/comments';
+@import 'components/media';
+@import 'components/navigation-main';
+@import 'components/navigation-social';
+@import 'components/beaver-builder';
+@import 'components/fouc';
+@import 'components/admin-bar';
+
+// 6. Page-specific styles
+@import 'pages/home';
+@import 'pages/posts-and-pages';
+@import 'pages/archives';
+
+// 7. Themes
+

@@ -1,0 +1,21 @@
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: $global-margin;
+  margin-bottom: $global-margin;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-bottom: $global-margin;
+  margin-left: $global-margin;
+}
+
+.aligncenter {
+  display: block;
+  clear: both;
+  margin-right: auto;
+  margin-bottom: $global-margin;
+  margin-left: auto;
+}

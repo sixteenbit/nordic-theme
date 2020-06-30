@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+$footer-background: #141923;
+$footer-copyright-color: #73757a;
+
+.site-footer {
+  padding: rem-calc(24 0);
+  background-color: $footer-background;
+
+  @include breakpoint(medium up) {
+    padding: rem-calc(48 0);
+  }
+
+  .copyright {
+    margin-bottom: 0;
+    font-size: rem-calc(12);
+    color: $footer-copyright-color;
+
+    @include breakpoint(medium down) {
+      margin-top: rem-calc(32);
+      margin-left: 1rem;
+    }
+  }
+
+  .menu {
+    @include breakpoint(medium up) {
+      @include flex-align(right);
+      @include menu-simple();
+    }
+
+    a {
+      font-weight: 700;
+      color: $white;
+
+      @include on-event() {
+        opacity: 0.6;
+      }
+    }
+  }
+}

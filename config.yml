@@ -1,0 +1,44 @@
+# Your project's server will run on localhost:xxxx at this port
+URL: "https://sixteenbit.ddev.site"
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  php:
+    - "./*.php"
+    - "./**/*.php"
+  images:
+    - "src/img/**/*"
+  sass:
+    foundation:
+      - "node_modules/foundation-sites/scss"
+    fontawesome:
+      - "node_modules/@fortawesome/fontawesome-pro/scss"
+  javascript:
+    vendors:
+      - "node_modules/what-input/dist/what-input.js"
+      - "node_modules/foundation-sites/dist/js/foundation.js"
+    custom:
+      - "src/js/**/_*.js"
+  fonts:
+    fontawesome:
+      - "node_modules/@fortawesome/fontawesome-pro/webfonts/*"
+
+# Used in the theme .pot file for translation
+POT:
+  domain: 'nordic-theme'
+  package: 'nordic-theme'
+
+# Theme strings used in the `rename` gulp task
+THEME:
+  ## The current strings in the theme
+  CURRENT:
+    name: "Nordic"
+    slug: "nordic-theme"
+    prefix: "nordic_theme_"
+    class: "NT_"
+  ## The strings to rename in the theme
+  NEW:
+    name: "Nordic"
+    slug: "nordic-theme"
+    prefix: "nordic_theme_"
+    class: "NT_"

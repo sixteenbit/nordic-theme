@@ -1,0 +1,232 @@
+# Copyright (C) 2020 nordic-theme
+# This file is distributed under the same license as the nordic-theme package.
+msgid ""
+msgstr ""
+"Project-Id-Version: nordic-theme\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:20
+msgid "The page you are looking for does not exist. It may have been moved, or removed altogether. Perhaps you can return back to the site's homepage and see if you can find what you are looking for."
+msgstr ""
+
+#: 404.php:22
+msgid "Back Home"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:39
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:33
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: index.php:29
+msgid "Search:"
+msgstr ""
+
+#: index.php:45
+msgid "We could not find any results for your search. You can give it another try through the search form below."
+msgstr ""
+
+#: index.php:36
+msgid "We found %s result for your search."
+msgid_plural "We found %s results for your search."
+msgstr[0] ""
+msgstr[1] ""
+
+#: index.php:109
+msgid "search again"
+msgstr ""
+
+#: index.php:73
+msgid "Articles"
+msgstr ""
+
+#: searchform.php:20
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:21
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:23
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: classes/class-bb-themer-setup.php:24
+msgid "Header area"
+msgstr ""
+
+#: classes/class-bb-themer-setup.php:32
+msgid "Content area"
+msgstr ""
+
+#: classes/class-bb-themer-setup.php:40
+msgid "Footer area"
+msgstr ""
+
+#: classes/class-customizer.php:20
+msgid "Theme Options"
+msgstr ""
+
+#: classes/class-customizer.php:38
+msgid "Force Login"
+msgstr ""
+
+#: classes/class-customizer.php:39
+msgid "Make the website private until it's ready to share publicly, or keep it private for members only."
+msgstr ""
+
+#: classes/class-force-login.php:56
+msgid "You're not authorized to access this site."
+msgstr ""
+
+#: classes/class-force-login.php:56
+msgid "Error"
+msgstr ""
+
+#: classes/class-force-login.php:72
+msgid "Only authenticated users can access the REST API."
+msgstr ""
+
+#. translators: %s: post date.
+#: classes/class-tags.php:19
+msgid "%1$s ago"
+msgstr ""
+
+#: classes/class-tags.php:43
+msgid "By"
+msgstr ""
+
+#: classes/class-tags.php:59
+msgid "Previous"
+msgstr ""
+
+#: classes/class-tags.php:60
+msgid "Next"
+msgstr ""
+
+#: classes/class-tags.php:108
+msgid "First"
+msgstr ""
+
+#: classes/class-tags.php:112
+msgid "previous"
+msgstr ""
+
+#: classes/class-tags.php:118
+msgid "You're on page "
+msgstr ""
+
+#: classes/class-tags.php:128
+msgid "next"
+msgstr ""
+
+#: classes/class-tags.php:133
+msgid "Last"
+msgstr ""
+
+#: classes/class-theme-setup.php:19
+msgid "Primary Menu"
+msgstr ""
+
+#: classes/class-theme-setup.php:20
+msgid "Social Menu"
+msgstr ""
+
+#: classes/class-theme-setup.php:21, template-parts/footer.php:19
+msgid "Footer Menu"
+msgstr ""
+
+#: classes/class-theme-setup.php:114
+msgid "Primary"
+msgstr ""
+
+#: classes/class-theme-setup.php:119
+msgid "Secondary"
+msgstr ""
+
+#: classes/class-theme-setup.php:142
+msgid "Primary Sidebar"
+msgstr ""
+
+#: classes/class-theme-setup.php:143
+msgid "Add widgets here."
+msgstr ""
+
+#: classes/class-theme-setup.php:311
+msgid "Skip to the content"
+msgstr ""
+
+#: template-parts/content.php:23
+msgid "Continue reading"
+msgstr ""
+
+#: template-parts/content.php:29
+msgid "Categories"
+msgstr ""
+
+#: template-parts/content.php:38
+msgid "Page"
+msgstr ""
+
+#: template-parts/content.php:38
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:53
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: template-parts/footer.php:12
+msgid "Copyright &copy; %s. All rights reserved."
+msgstr ""
+
+#: template-parts/header.php:32
+msgid "Main navigation toggle"
+msgstr ""
+
+#: template-parts/header.php:56
+msgid "Social Links Menu"
+msgstr ""
+
+#: template-parts/navigation.php:12
+msgid "Post"
+msgstr ""
+
+#: template-parts/off-canvas.php:27
+msgid "Social Links Mobile Menu"
+msgstr ""
+
+#: templates/left-sidebar.php:3
+msgid "Left Sidebar"
+msgstr ""
+
+#: templates/right-sidebar.php:3
+msgid "Right Sidebar"
+msgstr ""

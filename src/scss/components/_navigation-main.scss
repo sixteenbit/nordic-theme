@@ -1,0 +1,40 @@
+$main-link-color: #151922;
+
+.main-navigation {
+  @include breakpoint(medium up) {
+    margin-left: rem-calc(16);
+  }
+
+  .dropdown.menu {
+
+    a {
+      font-weight: 600;
+      color: $main-link-color;
+
+      @include on-event() {
+        opacity: 0.6;
+      }
+    }
+
+    & > li.is-active {
+      & > a {
+        color: $main-link-color;
+      }
+    }
+  }
+}
+
+.off-canvas {
+  .menu {
+    a {
+      font-size: rem-calc(20);
+      font-weight: 700;
+      line-height: 1.8;
+      color: $white;
+
+      @include on-event() {
+        opacity: 0.6;
+      }
+    }
+  }
+}

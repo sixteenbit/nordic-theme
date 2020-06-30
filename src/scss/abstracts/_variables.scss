@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// Overwrite variables in
+// @link src/scss/vendors/foundation/_settings.scss
+// -----------------------------------------------------------------------------
+$global-width: rem-calc(1170);
+
+$foundation-palette: (
+  primary: #2b82ff,
+  secondary: #767676,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+
+$body-background: $white;
+$body-font-color: #73757a;
+$body-font-family: 'Nunito Sans', sans-serif;
+
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 0;
+
+$header-font-family: 'Nunito Sans', sans-serif;
+$header-font-weight: $global-weight-normal;
+$header-color: #383c43;
+
+$anchor-color: #4687ff;
+$anchor-color-hover: #90b7ff;
+$anchor-text-decoration: none;
+$anchor-text-decoration-hover: underline;
+
+$button-background: #f64f64;
+$button-background-hover: #fa95a2;
+
+$dropdownmenu-arrow-color: $button-background;
+$accordionmenu-arrow-color: $dropdownmenu-arrow-color;
+
+$header-border: #e8e8e9;
+$offcanvas-background: #141923;
+$dropdown-border: 1px solid $header-border;
+$dropdownmenu-border: 1px solid $dropdown-border;
+$dropdown-menu-item-color-active: get-color(primary);
+
+$pagination-item-background-hover: #f8f8f8;
+$pagination-item-background-current: #f64f64;
+$pagination-item-color-current: $white;
+$pagination-item-color-disabled: $pagination-item-background-hover;
+
+$footer-background: #141923;
+$footer-copyright-color: #73757a;
