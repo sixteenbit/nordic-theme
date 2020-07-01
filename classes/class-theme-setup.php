@@ -113,23 +113,18 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 					array(
 						'name'  => __( 'Primary', 'nordic-theme' ),
 						'slug'  => 'primary',
-						'color' => '#1779ba',
+						'color' => '#2b82ff',
 					),
 					array(
 						'name'  => __( 'Secondary', 'nordic-theme' ),
 						'slug'  => 'secondary',
-						'color' => '#767676',
+						'color' => '#f64f64',
 					),
 				)
 			);
 
 			// Add theme support for selective refresh for widgets.
 			add_theme_support( 'customize-selective-refresh-widgets' );
-
-			// Beaver Themer compatibility.
-			add_theme_support( 'fl-theme-builder-headers' );
-			add_theme_support( 'fl-theme-builder-footers' );
-			add_theme_support( 'fl-theme-builder-parts' );
 		}
 
 		/**
@@ -143,9 +138,57 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 					'description'   => esc_html__( 'Add widgets here.', 'nordic-theme' ),
 					'before_widget' => '<section id="%1$s" class="widget %2$s">',
 					'after_widget'  => '</section>',
-					'before_title'  => '<h2 class="widget-title h4">',
+					'before_title'  => '<h2 class="widget-title">',
 					'after_title'   => '</h2>',
 				)
+			);
+
+			register_sidebar(
+					array(
+							'id'            => 'footer-1',
+							'name'          => esc_html__( 'Footer #1', 'nordic-theme' ),
+							'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
+							'before_widget' => '<section id="%1$s" class="widget %2$s">',
+							'after_widget'  => '</section>',
+							'before_title'  => '<h3 class="widget-title h4">',
+							'after_title'   => '</h3>',
+					)
+			);
+
+			register_sidebar(
+					array(
+							'id'            => 'footer-2',
+							'name'          => esc_html__( 'Footer #2', 'nordic-theme' ),
+							'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
+							'before_widget' => '<section id="%1$s" class="widget %2$s">',
+							'after_widget'  => '</section>',
+							'before_title'  => '<h3 class="widget-title h4">',
+							'after_title'   => '</h3>',
+					)
+			);
+
+			register_sidebar(
+					array(
+							'id'            => 'footer-3',
+							'name'          => esc_html__( 'Footer #3', 'nordic-theme' ),
+							'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
+							'before_widget' => '<section id="%1$s" class="widget %2$s">',
+							'after_widget'  => '</section>',
+							'before_title'  => '<h3 class="widget-title h4">',
+							'after_title'   => '</h3>',
+					)
+			);
+
+			register_sidebar(
+					array(
+							'id'            => 'footer-4',
+							'name'          => esc_html__( 'Footer #4', 'nordic-theme' ),
+							'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
+							'before_widget' => '<section id="%1$s" class="widget %2$s">',
+							'after_widget'  => '</section>',
+							'before_title'  => '<h3 class="widget-title h4">',
+							'after_title'   => '</h3>',
+					)
 			);
 		}
 
@@ -153,6 +196,15 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 		 * Enqueue theme assets.
 		 */
 		public static function assets() {
+			wp_register_style(
+				'nordic-theme-motion-ui',
+				get_theme_file_uri( 'assets/css/motion-ui.css' ),
+				array(),
+				NT_THEME_VERSION
+			);
+
+			wp_style_add_data( 'nordic-theme-motion-ui', 'rtl', 'replace' );
+
 			wp_register_style(
 				'nordic-theme-fontawesome',
 				get_theme_file_uri( 'assets/css/fontawesome.css' ),
@@ -177,12 +229,21 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 				'nordic-theme-styles',
 				get_stylesheet_uri(),
 				array(
+					'nordic-theme-motion-ui',
 					'nordic-theme-fontawesome',
 					'nordic-theme-foundation',
 				)
 			);
 
 			wp_style_add_data( 'nordic-theme-styles', 'rtl', 'replace' );
+
+			wp_register_script(
+				'nordic-theme-motion-ui-js',
+				NT_THEME_URL . '/assets/js/motion-ui.js',
+				array(),
+				filemtime( NT_THEME_DIR . '/src/js' ),
+				true
+			);
 
 			wp_register_script(
 				'nordic-theme-what-input-js',
@@ -205,6 +266,7 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 				NT_THEME_URL . '/assets/js/scripts.js',
 				array(
 					'jquery',
+					'nordic-theme-motion-ui-js',
 					'nordic-theme-what-input-js',
 					'nordic-theme-foundation-js',
 				),
@@ -297,7 +359,7 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 		 *
 		 * @link https://git.io/vWdr2
 		 */
-		public static function skip_link_focus_fix() {       ?>
+		public static function skip_link_focus_fix() { ?>
 			<script>
 				/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
 					var t, e = location.hash.substring(1);
@@ -356,7 +418,7 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 
 		public static function custom_admin_footer() {
 			$text = sprintf(
-				/* translators: %s: https://sixteenbit.com */
+			/* translators: %s: https://sixteenbit.com */
 				__( 'Developed by <a href="%s">Sixteenbit</a>.' ),
 				__( 'https://sixteenbit.com' )
 			);

@@ -6,7 +6,7 @@
  */
 
 // Defines
-define( 'NT_THEME_VERSION', '0.3.1' );
+define( 'NT_THEME_VERSION', '0.1.0' );
 define( 'NT_THEME_DIR', get_template_directory() );
 define( 'NT_THEME_URL', get_template_directory_uri() );
 
@@ -23,10 +23,6 @@ require_once 'classes/class-dropdown-walker.php';
 
 if ( ! function_exists( 'v_forcelogin' ) ) {
 	require_once 'classes/class-force-login.php';
-}
-
-if ( class_exists( 'FLThemeBuilderLoader' ) ) {
-	require_once 'classes/class-bb-themer-setup.php';
 }
 
 // Theme actions

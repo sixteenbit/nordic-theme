@@ -27,15 +27,15 @@
 			<nav class="social-navigation" aria-label="<?php esc_html_e( 'Social Links Mobile Menu', 'nordic-theme' ); ?>">
 				<?php
 				wp_nav_menu(
-						array(
-								'container'      => false,
-								'menu_id'        => 'small-social-navigation',
-								'theme_location' => 'social',
-								'menu_class'     => 'social-links-menu menu',
-								'depth'          => 1,
-								'link_before'    => '<span class="screen-reader-text">',
-								'link_after'     => '</span>',
-						)
+					array(
+						'container'      => false,
+						'menu_id'        => 'small-social-navigation',
+						'theme_location' => 'social',
+						'menu_class'     => 'social-links-menu menu',
+						'depth'          => 1,
+						'link_before'    => '<span class="screen-reader-text">',
+						'link_after'     => '</span>',
+					)
 				);
 				?>
 			</nav><!-- .social-navigation -->

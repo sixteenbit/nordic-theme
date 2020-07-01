@@ -41,6 +41,22 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
+#: footer.php:25
+msgid "Copyright &copy; %s. All rights reserved."
+msgstr ""
+
+#: footer.php:32, classes/class-theme-setup.php:21
+msgid "Footer Menu"
+msgstr ""
+
+#: header.php:55
+msgid "Main navigation toggle"
+msgstr ""
+
+#: header.php:79
+msgid "Social Links Menu"
+msgstr ""
+
 #: index.php:29
 msgid "Search:"
 msgstr ""
@@ -75,18 +91,6 @@ msgstr ""
 #: searchform.php:23
 msgctxt "submit button"
 msgid "Search"
-msgstr ""
-
-#: classes/class-bb-themer-setup.php:24
-msgid "Header area"
-msgstr ""
-
-#: classes/class-bb-themer-setup.php:32
-msgid "Content area"
-msgstr ""
-
-#: classes/class-bb-themer-setup.php:40
-msgid "Footer area"
 msgstr ""
 
 #: classes/class-customizer.php:20
@@ -158,10 +162,6 @@ msgstr ""
 msgid "Social Menu"
 msgstr ""
 
-#: classes/class-theme-setup.php:21, template-parts/footer.php:19
-msgid "Footer Menu"
-msgstr ""
-
 #: classes/class-theme-setup.php:114
 msgid "Primary"
 msgstr ""
@@ -170,15 +170,35 @@ msgstr ""
 msgid "Secondary"
 msgstr ""
 
-#: classes/class-theme-setup.php:142
+#: classes/class-theme-setup.php:137
 msgid "Primary Sidebar"
 msgstr ""
 
-#: classes/class-theme-setup.php:143
+#: classes/class-theme-setup.php:138
 msgid "Add widgets here."
 msgstr ""
 
-#: classes/class-theme-setup.php:311
+#: classes/class-theme-setup.php:149
+msgid "Footer #1"
+msgstr ""
+
+#: classes/class-theme-setup.php:150, classes/class-theme-setup.php:162, classes/class-theme-setup.php:174, classes/class-theme-setup.php:186
+msgid "Widgets in this area will be displayed in the first column in the footer."
+msgstr ""
+
+#: classes/class-theme-setup.php:161
+msgid "Footer #2"
+msgstr ""
+
+#: classes/class-theme-setup.php:173
+msgid "Footer #3"
+msgstr ""
+
+#: classes/class-theme-setup.php:185
+msgid "Footer #4"
+msgstr ""
+
+#: classes/class-theme-setup.php:373
 msgid "Skip to the content"
 msgstr ""
 
@@ -201,18 +221,6 @@ msgstr ""
 #. translators: %s: Name of current post. Only visible to screen readers
 #: template-parts/content.php:53
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
-
-#: template-parts/footer.php:12
-msgid "Copyright &copy; %s. All rights reserved."
-msgstr ""
-
-#: template-parts/header.php:32
-msgid "Main navigation toggle"
-msgstr ""
-
-#: template-parts/header.php:56
-msgid "Social Links Menu"
 msgstr ""
 
 #: template-parts/navigation.php:12

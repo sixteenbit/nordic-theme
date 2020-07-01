@@ -22,6 +22,18 @@ $main-link-color: #151922;
       }
     }
   }
+
+  .submenu {
+    a {
+      font-size: rem-calc(13);
+    }
+
+    .is-active {
+      & > a {
+        background: $header-border;
+      }
+    }
+  }
 }
 
 .off-canvas {

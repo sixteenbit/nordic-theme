@@ -1,0 +1,12 @@
+.footer-widgets {
+  .menu {
+    @include menu-base();
+    @include menu-direction(vertical);
+
+    & > li,
+    li + li {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

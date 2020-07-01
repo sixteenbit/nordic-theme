@@ -39,13 +39,13 @@ $accordionmenu-arrow-color: $dropdownmenu-arrow-color;
 $header-border: #e8e8e9;
 $offcanvas-background: #141923;
 $dropdown-border: 1px solid $header-border;
-$dropdownmenu-border: 1px solid $dropdown-border;
-$dropdown-menu-item-color-active: get-color(primary);
+$dropdownmenu-border: 1px solid $header-border;
 
 $pagination-item-background-hover: #f8f8f8;
 $pagination-item-background-current: #f64f64;
 $pagination-item-color-current: $white;
 $pagination-item-color-disabled: $pagination-item-background-hover;
+$pagination-mobile-items: true;
 
 $footer-background: #141923;
 $footer-copyright-color: #73757a;

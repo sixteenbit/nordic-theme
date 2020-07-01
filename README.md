@@ -1,13 +1,10 @@
 # Nordic
 
-![Nordic](screenshot.png)
-
 ## Features
 
 - Build workflow using [gulp.js](https://gulpjs.com/)
 - [Foundation for Sites](https://get.foundation/sites/docs/)
 - [Font Awesome Pro](https://fontawesome.com/)
-- Beaver Builder support
 - Force Login option for closing off site during development
 
 ## Getting started

@@ -115,7 +115,7 @@ if ( ! class_exists( 'NT_Tags' ) ) {
 			if ( ! empty( $min ) && ! empty( $max ) ) {
 				for ( $i = $min; $i <= $max; $i++ ) {
 					if ( $page == $i ) {
-						$echo .= '<li class="current"><span class="show-for-sr">' . __( 'You\'re on page ', 'nordic-theme' ) . '</span>' . str_pad( (int) $i, 2, '0', STR_PAD_LEFT ) . '</li>';
+						$echo .= '<li class="current"><span class="show-for-sr">' . __( 'You\'re on page ', 'nordic-theme' ) . '</span>' . str_pad( (int) $i, 1, '0', STR_PAD_LEFT ) . '</li>';
 					} else {
 						$echo .= sprintf( '<li><a href="%s">%002d</a></li>', esc_attr( get_pagenum_link( $i ) ), $i );
 					}
