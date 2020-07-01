@@ -16,10 +16,14 @@ get_header();
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'nordic-theme' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
-					<h3 class="subheader"><?php esc_html_e( 'The page you are looking for does not exist. It may have been moved, or removed altogether. Perhaps you can return back to the site\'s homepage and see if you can find what you are looking for.', 'nordic-theme' ); ?></h3>
+				<div class="page-content grid-container">
+					<div class="grid-x grid-padding-x">
+						<div class="cell small-12 medium-10 medium-offset-1 large-8 large-offset-2">
+							<p class="lead"><?php esc_html_e( 'The page you are looking for does not exist. It may have been moved, or removed altogether. Perhaps you can return back to the site\'s homepage and see if you can find what you are looking for.', 'nordic-theme' ); ?></p>
 
-					<a class="secondary button" href="<?php echo site_url(); ?>"><i class="fal fa-long-arrow-left"></i> <?php esc_html_e( 'Back Home', 'nordic-theme' ); ?></a>
+							<a class="button" href="<?php echo site_url(); ?>"><i class="fal fa-long-arrow-left"></i> <?php esc_html_e( 'Back Home', 'nordic-theme' ); ?></a>
+						</div>
+					</div>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

@@ -1,0 +1,17 @@
+:root {
+  .has-primary-color {
+    color: $primary-color;
+  }
+
+  .has-primary-background-color {
+    background-color: $primary-color;
+  }
+
+  .has-secondary-color {
+    color: $button-background;
+  }
+
+  .has-secondary-background-color {
+    background-color: $button-background;
+  }
+}
