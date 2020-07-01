@@ -3,7 +3,8 @@
 // -------------------------------------------------------------------------------------
 $post-header-background: #f8f8f8;
 
-.is-singular {
+.is-singular,
+.error-404 {
 
   .entry-header {
     margin-bottom: rem-calc(32);
