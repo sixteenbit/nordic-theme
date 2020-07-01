@@ -9,10 +9,19 @@
 - [Font Awesome Pro](https://fontawesome.com/)
 - Force Login option for closing off site during development
 
+## Dependencies
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+
 ## Getting started
 
 ```bash
-# Installs dependencies and runs the initial build task
+# Clone the repository into wp-content/themes
+git clone https://github.com/sixteenbit/nordic-theme.git
+```
+
+```bash
+# From the root of wp-content/themes/nordic-theme run the following:
 yarn
 ```
 
