@@ -1,5 +1,7 @@
 # Nordic
 
+![Nordic](screenshot.png)
+
 ## Features
 
 - Build workflow using [gulp.js](https://gulpjs.com/)
