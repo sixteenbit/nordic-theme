@@ -1,4 +1,13 @@
 .footer-widgets {
+  padding-top: rem-calc(32);
+  padding-bottom: rem-calc(32);
+
+  .widget-title {
+    font-size: rem-calc(14);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
   .menu {
     @include menu-base();
     @include menu-direction(vertical);
@@ -7,6 +16,10 @@
     li + li {
       width: 100%;
       margin-left: 0;
+    }
+
+    a {
+      padding-left: 0;
     }
   }
 }

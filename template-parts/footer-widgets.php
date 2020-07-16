@@ -38,4 +38,5 @@ if ( $has_footer_1 || $has_footer_2 || $has_footer_3 || $has_footer_4 ) { ?>
 		</div><!-- .grid-x -->
 	</div><!-- .grid-container -->
 
-<?php }
+	<?php
+}
