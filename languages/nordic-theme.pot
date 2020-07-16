@@ -93,15 +93,55 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: classes/class-customizer.php:20
+#: classes/class-customizer.php:35
+msgid "Text Color"
+msgstr ""
+
+#: classes/class-customizer.php:36
+msgid "Select the color to be used for the body text color."
+msgstr ""
+
+#: classes/class-customizer.php:58
+msgid "Header Background"
+msgstr ""
+
+#: classes/class-customizer.php:59
+msgid "Select the background color to be used for the header."
+msgstr ""
+
+#: classes/class-customizer.php:81
+msgid "Header Color"
+msgstr ""
+
+#: classes/class-customizer.php:82
+msgid "Select the color to be used for the header menu items."
+msgstr ""
+
+#: classes/class-customizer.php:104
+msgid "Anchor Color"
+msgstr ""
+
+#: classes/class-customizer.php:105
+msgid "Select the color to be used for hyperlink color."
+msgstr ""
+
+#: classes/class-customizer.php:127
+msgid "Anchor Hover Color"
+msgstr ""
+
+#: classes/class-customizer.php:128
+msgid "Select the color to be used for hyperlink hover color."
+msgstr ""
+
+#: classes/class-customizer.php:137
 msgid "Theme Options"
 msgstr ""
 
-#: classes/class-customizer.php:38
+#: classes/class-customizer.php:155
 msgid "Force Login"
 msgstr ""
 
-#: classes/class-customizer.php:39
+#: classes/class-customizer.php:156
 msgid "Make the website private until it's ready to share publicly, or keep it private for members only."
 msgstr ""
 

@@ -261,6 +261,7 @@ kbd {
 .editor-post-title__block .editor-post-title__input,
 .editor-styles-wrapper .wp-block h1 {
   font-weight: 700;
+  font-family: $header-font-family;
 
   @include breakpoint(medium up) {
     font-size: rem-calc(36);

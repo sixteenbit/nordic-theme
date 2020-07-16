@@ -144,51 +144,51 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 			);
 
 			register_sidebar(
-					array(
-							'id'            => 'footer-1',
-							'name'          => esc_html__( 'Footer #1', 'nordic-theme' ),
-							'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
-							'before_widget' => '<section id="%1$s" class="widget %2$s">',
-							'after_widget'  => '</section>',
-							'before_title'  => '<h3 class="widget-title h4">',
-							'after_title'   => '</h3>',
-					)
+				array(
+					'id'            => 'footer-1',
+					'name'          => esc_html__( 'Footer #1', 'nordic-theme' ),
+					'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
+					'before_widget' => '<section id="%1$s" class="widget %2$s">',
+					'after_widget'  => '</section>',
+					'before_title'  => '<h3 class="widget-title h4">',
+					'after_title'   => '</h3>',
+				)
 			);
 
 			register_sidebar(
-					array(
-							'id'            => 'footer-2',
-							'name'          => esc_html__( 'Footer #2', 'nordic-theme' ),
-							'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
-							'before_widget' => '<section id="%1$s" class="widget %2$s">',
-							'after_widget'  => '</section>',
-							'before_title'  => '<h3 class="widget-title h4">',
-							'after_title'   => '</h3>',
-					)
+				array(
+					'id'            => 'footer-2',
+					'name'          => esc_html__( 'Footer #2', 'nordic-theme' ),
+					'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
+					'before_widget' => '<section id="%1$s" class="widget %2$s">',
+					'after_widget'  => '</section>',
+					'before_title'  => '<h3 class="widget-title h4">',
+					'after_title'   => '</h3>',
+				)
 			);
 
 			register_sidebar(
-					array(
-							'id'            => 'footer-3',
-							'name'          => esc_html__( 'Footer #3', 'nordic-theme' ),
-							'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
-							'before_widget' => '<section id="%1$s" class="widget %2$s">',
-							'after_widget'  => '</section>',
-							'before_title'  => '<h3 class="widget-title h4">',
-							'after_title'   => '</h3>',
-					)
+				array(
+					'id'            => 'footer-3',
+					'name'          => esc_html__( 'Footer #3', 'nordic-theme' ),
+					'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
+					'before_widget' => '<section id="%1$s" class="widget %2$s">',
+					'after_widget'  => '</section>',
+					'before_title'  => '<h3 class="widget-title h4">',
+					'after_title'   => '</h3>',
+				)
 			);
 
 			register_sidebar(
-					array(
-							'id'            => 'footer-4',
-							'name'          => esc_html__( 'Footer #4', 'nordic-theme' ),
-							'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
-							'before_widget' => '<section id="%1$s" class="widget %2$s">',
-							'after_widget'  => '</section>',
-							'before_title'  => '<h3 class="widget-title h4">',
-							'after_title'   => '</h3>',
-					)
+				array(
+					'id'            => 'footer-4',
+					'name'          => esc_html__( 'Footer #4', 'nordic-theme' ),
+					'description'   => esc_html__( 'Widgets in this area will be displayed in the first column in the footer.', 'nordic-theme' ),
+					'before_widget' => '<section id="%1$s" class="widget %2$s">',
+					'after_widget'  => '</section>',
+					'before_title'  => '<h3 class="widget-title h4">',
+					'after_title'   => '</h3>',
+				)
 			);
 		}
 
