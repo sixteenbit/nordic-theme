@@ -68,3 +68,10 @@ if ( ! function_exists( 'nordic_theme_post_thumbnail' ) ) :
 		<?php
 	}
 endif;
+
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+		'https://github.com/sixteenbit/nordic-theme/',
+		__FILE__,
+		'nordic-theme'
+);
