@@ -9,6 +9,7 @@ const yargs = require('yargs');
 const rimraf = require('rimraf');
 const rename = require('gulp-rename');
 const cssnano = require('gulp-cssnano');
+const zip = require('gulp-zip');
 
 // Check for --production flag
 const PRODUCTION = !!(yargs.argv.production);
@@ -38,7 +39,7 @@ gulp.task('sass:style', function () {
 		.pipe($.if(!PRODUCTION, $.sourcemaps.write()))
 		.pipe(gulp.dest('./'))
 		.pipe($.rtlcss())
-		.pipe(rename({ suffix: '-rtl' }))
+		.pipe(rename({suffix: '-rtl'}))
 		.pipe(gulp.dest('./'));
 });
 
@@ -54,7 +55,7 @@ gulp.task('sass:editor', function () {
 		.pipe($.if(!PRODUCTION, $.sourcemaps.write()))
 		.pipe(gulp.dest('assets/css'))
 		.pipe($.rtlcss())
-		.pipe(rename({ suffix: '-rtl' }))
+		.pipe(rename({suffix: '-rtl'}))
 		.pipe(gulp.dest('assets/css'));
 });
 
@@ -71,7 +72,7 @@ gulp.task('sass:foundation', function () {
 		.pipe($.if(!PRODUCTION, $.sourcemaps.write()))
 		.pipe(gulp.dest('assets/css'))
 		.pipe($.rtlcss())
-		.pipe(rename({ suffix: '-rtl' }))
+		.pipe(rename({suffix: '-rtl'}))
 		.pipe(gulp.dest('assets/css'));
 });
 
@@ -88,7 +89,7 @@ gulp.task('sass:motionui', function () {
 		.pipe($.if(!PRODUCTION, $.sourcemaps.write()))
 		.pipe(gulp.dest('assets/css'))
 		.pipe($.rtlcss())
-		.pipe(rename({ suffix: '-rtl' }))
+		.pipe(rename({suffix: '-rtl'}))
 		.pipe(gulp.dest('assets/css'));
 });
 
@@ -106,7 +107,7 @@ gulp.task('sass:fontawesome', function () {
 		.pipe($.if(!PRODUCTION, $.sourcemaps.write()))
 		.pipe(gulp.dest('assets/css'))
 		.pipe($.rtlcss())
-		.pipe(rename({ suffix: '-rtl' }))
+		.pipe(rename({suffix: '-rtl'}))
 		.pipe(gulp.dest('assets/css'));
 });
 
@@ -156,6 +157,12 @@ gulp.task('images:optimize', function () {
 	return gulp.src(PATHS.images)
 		.pipe($.imagemin())
 		.pipe(gulp.dest('assets/img'))
+});
+
+gulp.task('release:zip', function () {
+	return gulp.src('release/**')
+		.pipe(zip(THEME.CURRENT.slug + '.zip'))
+		.pipe(gulp.dest('release'))
 });
 
 gulp.task('copy:dist', function () {
@@ -212,7 +219,7 @@ gulp.task('watch', gulp.series(clean, 'build', watch));
 gulp.task('server', gulp.series('build', server, watch));
 
 // Build project and copy to clean directory
-gulp.task('release', gulp.series(clean, 'build', 'copy:dist'));
+gulp.task('release', gulp.series(clean, 'build', 'copy:dist', 'release:zip'));
 
 // Clean directory and build the assets
 gulp.task('default', gulp.series(clean, 'build'));

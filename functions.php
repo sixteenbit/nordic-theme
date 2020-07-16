@@ -6,7 +6,7 @@
  */
 
 // Defines
-define( 'NT_THEME_VERSION', '0.2.1' );
+define( 'NT_THEME_VERSION', '0.2.2' );
 define( 'NT_THEME_DIR', get_template_directory() );
 define( 'NT_THEME_URL', get_template_directory_uri() );
 
@@ -69,9 +69,9 @@ if ( ! function_exists( 'nordic_theme_post_thumbnail' ) ) :
 	}
 endif;
 
-require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-		'https://github.com/sixteenbit/nordic-theme/',
+require 'update-checker/plugin-update-checker.php';
+$NTUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+		'https://updates.sixteenbit.com/updates/?action=get_metadata&slug=nordic-theme',
 		__FILE__,
 		'nordic-theme'
 );
