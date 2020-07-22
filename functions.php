@@ -6,7 +6,7 @@
  */
 
 // Defines
-define( 'NT_THEME_VERSION', '0.2.3' );
+define( 'NT_THEME_VERSION', '0.2.4' );
 define( 'NT_THEME_DIR', get_template_directory() );
 define( 'NT_THEME_URL', get_template_directory_uri() );
 

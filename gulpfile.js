@@ -224,4 +224,4 @@ gulp.task('release', gulp.series(clean, 'build', 'copy:dist', 'release:zip'));
 gulp.task('default', gulp.series(clean, 'build'));
 
 // Initial build of the project
-gulp.task('init', gulp.parallel('build'));
+gulp.task('init', gulp.series('build'));

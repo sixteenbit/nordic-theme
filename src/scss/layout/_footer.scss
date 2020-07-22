@@ -1,8 +1,8 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
-$footer-background: #141923;
-$footer-copyright-color: #73757a;
+$footer-background: #141923 !default;
+$footer-copyright-color: #73757a !default;
 
 .site-footer {
   padding: rem-calc(24 0);

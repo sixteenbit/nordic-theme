@@ -1,4 +1,4 @@
-$main-link-color: #151922;
+$main-link-color: #151922 !default;
 
 .main-navigation {
   @include breakpoint(medium up) {
