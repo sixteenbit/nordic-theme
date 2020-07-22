@@ -96,7 +96,6 @@ gulp.task('sass:motionui', function () {
 gulp.task('sass:fontawesome', function () {
 	return gulp.src('src/scss/vendors/fontawesome/fontawesome.scss')
 		.pipe($.sourcemaps.init())
-		.pipe($.plumber())
 		.pipe($.sass({
 			includePaths: PATHS.sass.fontawesome,
 			outputStyle: 'expanded'

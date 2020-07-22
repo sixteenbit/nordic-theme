@@ -12,6 +12,7 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+@include add-foundation-colors;
 
 $body-background: $white;
 $body-font-color: #73757a;
