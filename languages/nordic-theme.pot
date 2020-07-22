@@ -202,43 +202,43 @@ msgstr ""
 msgid "Social Menu"
 msgstr ""
 
-#: classes/class-theme-setup.php:114
+#: classes/class-theme-setup.php:115
 msgid "Primary"
 msgstr ""
 
-#: classes/class-theme-setup.php:119
+#: classes/class-theme-setup.php:120
 msgid "Secondary"
 msgstr ""
 
-#: classes/class-theme-setup.php:137
+#: classes/class-theme-setup.php:138
 msgid "Primary Sidebar"
 msgstr ""
 
-#: classes/class-theme-setup.php:138
+#: classes/class-theme-setup.php:139
 msgid "Add widgets here."
 msgstr ""
 
-#: classes/class-theme-setup.php:149
+#: classes/class-theme-setup.php:150
 msgid "Footer #1"
 msgstr ""
 
-#: classes/class-theme-setup.php:150, classes/class-theme-setup.php:162, classes/class-theme-setup.php:174, classes/class-theme-setup.php:186
+#: classes/class-theme-setup.php:151, classes/class-theme-setup.php:163, classes/class-theme-setup.php:175, classes/class-theme-setup.php:187
 msgid "Widgets in this area will be displayed in the first column in the footer."
 msgstr ""
 
-#: classes/class-theme-setup.php:161
+#: classes/class-theme-setup.php:162
 msgid "Footer #2"
 msgstr ""
 
-#: classes/class-theme-setup.php:173
+#: classes/class-theme-setup.php:174
 msgid "Footer #3"
 msgstr ""
 
-#: classes/class-theme-setup.php:185
+#: classes/class-theme-setup.php:186
 msgid "Footer #4"
 msgstr ""
 
-#: classes/class-theme-setup.php:373
+#: classes/class-theme-setup.php:374
 msgid "Skip to the content"
 msgstr ""
 

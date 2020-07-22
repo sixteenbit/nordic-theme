@@ -6,7 +6,7 @@
  */
 
 // Defines
-define( 'NT_THEME_VERSION', '0.2.2' );
+define( 'NT_THEME_VERSION', '0.2.3' );
 define( 'NT_THEME_DIR', get_template_directory() );
 define( 'NT_THEME_URL', get_template_directory_uri() );
 
@@ -58,7 +58,8 @@ if ( ! function_exists( 'nordic_theme_post_thumbnail' ) ) :
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
 			<?php
 			the_post_thumbnail(
-				'post-thumbnail', array(
+				'post-thumbnail',
+				array(
 					'alt' => the_title_attribute( 'echo=0' ),
 				)
 			);
@@ -71,7 +72,7 @@ endif;
 
 require 'update-checker/plugin-update-checker.php';
 $NTUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-		'https://updates.sixteenbit.com/updates/?action=get_metadata&slug=nordic-theme',
-		__FILE__,
-		'nordic-theme'
+	'https://updates.sixteenbit.com/updates/?action=get_metadata&slug=nordic-theme',
+	__FILE__,
+	'nordic-theme'
 );

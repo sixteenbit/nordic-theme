@@ -36,11 +36,11 @@
 						if ( is_front_page() && is_home() ) :
 							?>
 							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php
+							<?php
 						else :
 							?>
 							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-						<?php
+							<?php
 						endif;
 						$nordic_theme_description = get_bloginfo( 'description', 'display' );
 						if ( $nordic_theme_description || is_customize_preview() ) :
@@ -59,15 +59,15 @@
 						<nav id="site-navigation" class="main-navigation hide-for-small-only">
 							<?php
 							wp_nav_menu(
-									array(
-											'container'      => false,
-											'menu_id'        => 'primary',
-											'menu_class'     => 'dropdown horizontal menu',
-											'theme_location' => 'primary',
-											'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
-											'walker'         => new NT_Dropdown_Walker(),
-											'fallback_cb'    => false,
-									)
+								array(
+									'container'      => false,
+									'menu_id'        => 'primary',
+									'menu_class'     => 'dropdown horizontal menu',
+									'theme_location' => 'primary',
+									'items_wrap'     => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+									'walker'         => new NT_Dropdown_Walker(),
+									'fallback_cb'    => false,
+								)
 							);
 							?>
 						</nav><!-- #site-navigation -->
@@ -79,14 +79,14 @@
 						<nav class="social-navigation show-for-medium" aria-label="<?php esc_html_e( 'Social Links Menu', 'nordic-theme' ); ?>">
 							<?php
 							wp_nav_menu(
-									array(
-											'container'      => false,
-											'theme_location' => 'social',
-											'menu_class'     => 'social-links-menu menu align-right',
-											'depth'          => 1,
-											'link_before'    => '<span class="screen-reader-text">',
-											'link_after'     => '</span>',
-									)
+								array(
+									'container'      => false,
+									'theme_location' => 'social',
+									'menu_class'     => 'social-links-menu menu align-right',
+									'depth'          => 1,
+									'link_before'    => '<span class="screen-reader-text">',
+									'link_after'     => '</span>',
+								)
 							);
 							?>
 						</nav><!-- .social-navigation -->

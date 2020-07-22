@@ -57,6 +57,7 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 			// Set post thumbnail size.
 			set_post_thumbnail_size( 1200, 9999 );
 
+			add_image_size( 'nordic-theme-grid-image', 640, 320, true );
 			add_image_size( 'nordic-theme-featured-image', 2400, 9999 );
 
 			/*

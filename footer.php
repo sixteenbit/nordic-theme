@@ -32,14 +32,14 @@
 						<nav id="footer-navigation" class="footer-navigation" aria-label="<?php esc_html_e( 'Footer Menu', 'nordic-theme' ); ?>">
 							<?php
 							wp_nav_menu(
-									array(
-											'container'      => false,
-											'theme_location' => 'footer',
-											'menu_id'        => 'footer',
-											'menu_class'     => 'vertical medium-horizontal menu',
-											'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-											'depth'          => 1,
-									)
+								array(
+									'container'      => false,
+									'theme_location' => 'footer',
+									'menu_id'        => 'footer',
+									'menu_class'     => 'vertical medium-horizontal menu',
+									'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+									'depth'          => 1,
+								)
 							);
 							?>
 						</nav><!-- #site-navigation -->
