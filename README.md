@@ -6,7 +6,7 @@
 
 - Build workflow using [gulp.js](https://gulpjs.com/)
 - [Foundation for Sites](https://get.foundation/sites/docs/)
-- [Font Awesome Pro](https://fontawesome.com/)
+- [Font Awesome](https://fontawesome.com/)
 - Force Login option for closing off site during development
 
 ## Dependencies

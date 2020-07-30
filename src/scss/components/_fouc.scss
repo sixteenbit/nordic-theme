@@ -1,6 +1,8 @@
 // @link https://en.wikipedia.org/wiki/Flash_of_unstyled_content
 .no-js {
-  .top-bar {
-    display: none;
+  .main-navigation {
+    .submenu {
+      display: none;
+    }
   }
 }
