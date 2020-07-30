@@ -213,15 +213,26 @@ if ( ! class_exists( 'NT_Customizer' ) ) {
 				body {
 					color: <?php echo $text_color; ?>;
 				}
+				<?php endif;
 
-				<?php endif; ?>
-				<?php if ( isset( $header_background ) ) : ?>
+				if ( isset( $header_background ) ) : ?>
 				.site-header {
 					background-color: <?php echo $header_background; ?>;
 				}
-				<?php endif; ?>
+				<?php endif;
 
-				<?php if ( isset( $header_color ) ) : ?>
+				if (isset($header_color)) : ?>
+          .site-header,
+          .site-header a,
+          .site-header .menu-toggle,
+          .main-navigation .menu > li > a,
+          .main-navigation .dropdown.menu a,
+          .social-navigation .menu > li > a {
+            color: <?php echo $header_color; ?>;
+          }
+        <?php endif;
+
+        if ( isset( $anchor_color ) ) : ?>
 				a,
 				.button.hollow,
 				.button.hollow.disabled,
@@ -254,9 +265,6 @@ if ( ! class_exists( 'NT_Customizer' ) ) {
 					color: <?php echo $anchor_color; ?>;
 				}
 
-				<?php endif; ?>
-
-				<?php if ( isset( $anchor_color ) ) : ?>
 				.button.hollow,
 				.button.hollow.disabled,
 				.button.hollow[disabled],
@@ -272,15 +280,6 @@ if ( ! class_exists( 'NT_Customizer' ) ) {
 				.button-group.hollow .button.disabled:focus,
 				.button-group.hollow .button[disabled]:focus {
 					border-color: <?php echo $anchor_color; ?>;
-				}
-
-				.site-header,
-				.site-header a,
-				.site-header .menu-toggle,
-				.main-navigation .menu > li > a,
-				.main-navigation .dropdown.menu a,
-				.social-navigation .menu > li > a {
-					color: <?php echo $header_color; ?>;
 				}
 
 				.button.dropdown.hollow::after,
@@ -304,10 +303,9 @@ if ( ! class_exists( 'NT_Customizer' ) ) {
 				.post-password-form [type="submit"][disabled]:focus {
 					background-color: <?php echo $anchor_color; ?>;
 				}
+				<?php endif;
 
-				<?php endif; ?>
-
-				<?php if ( isset( $anchor_hover_color ) ) : ?>
+				if ( isset( $anchor_hover_color ) ) : ?>
 				a:hover,
 				a:focus,
 				.social-navigation .menu > li > a:hover,
@@ -324,7 +322,6 @@ if ( ! class_exists( 'NT_Customizer' ) ) {
 				.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
 					border-color: <?php echo $anchor_hover_color; ?> transparent transparent;
 				}
-
 				<?php endif; ?>
 			</style>
 			<?php
