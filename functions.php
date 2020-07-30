@@ -6,9 +6,19 @@
  */
 
 // Defines
-define( 'NT_THEME_VERSION', '0.2.4' );
+define( 'NT_THEME_VERSION', '0.2.5' );
 define( 'NT_THEME_DIR', get_template_directory() );
 define( 'NT_THEME_URL', get_template_directory_uri() );
+
+/**
+ * Update checker
+ */
+require 'update-checker/plugin-update-checker.php';
+$NTUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+  'https://updates.sixteenbit.com/updates/?action=get_metadata&slug=nordic-theme',
+  __FILE__,
+  'nordic-theme'
+);
 
 /**
  * REQUIRED FILES
@@ -69,10 +79,3 @@ if ( ! function_exists( 'nordic_theme_post_thumbnail' ) ) :
 		<?php
 	}
 endif;
-
-require 'update-checker/plugin-update-checker.php';
-$NTUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://updates.sixteenbit.com/updates/?action=get_metadata&slug=nordic-theme',
-	__FILE__,
-	'nordic-theme'
-);
