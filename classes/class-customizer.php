@@ -209,19 +209,19 @@ if ( ! class_exists( 'NT_Customizer' ) ) {
 			$anchor_hover_color = get_theme_mod( 'anchor_hover_color' );
 			?>
 			<style id="customizer-styles" type="text/css">
-				<?php if ( isset( $text_color ) ) : ?>
+				<?php if ( ! empty( $text_color ) ) : ?>
 				body {
 					color: <?php echo $text_color; ?>;
 				}
 				<?php endif;
 
-				if ( isset( $header_background ) ) : ?>
+				if ( ! empty( $header_background ) ) : ?>
 				.site-header {
 					background-color: <?php echo $header_background; ?>;
 				}
 				<?php endif;
 
-				if (isset($header_color)) : ?>
+				if (! empty($header_color)) : ?>
           .site-header,
           .site-header a,
           .site-header .menu-toggle,
@@ -232,7 +232,7 @@ if ( ! class_exists( 'NT_Customizer' ) ) {
           }
         <?php endif;
 
-        if ( isset( $anchor_color ) ) : ?>
+        if ( ! empty( $anchor_color ) ) : ?>
 				a,
 				.button.hollow,
 				.button.hollow.disabled,
@@ -305,7 +305,7 @@ if ( ! class_exists( 'NT_Customizer' ) ) {
 				}
 				<?php endif;
 
-				if ( isset( $anchor_hover_color ) ) : ?>
+				if ( ! empty( $anchor_hover_color ) ) : ?>
 				a:hover,
 				a:focus,
 				.social-navigation .menu > li > a:hover,

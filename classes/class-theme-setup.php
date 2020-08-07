@@ -233,7 +233,8 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 					'nordic-theme-motion-ui',
 					'nordic-theme-fontawesome',
 					'nordic-theme-foundation',
-				)
+				),
+        NT_THEME_VERSION
 			);
 
 			wp_style_add_data( 'nordic-theme-styles', 'rtl', 'replace' );
