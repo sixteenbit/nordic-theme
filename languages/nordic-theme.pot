@@ -238,7 +238,7 @@ msgstr ""
 msgid "Footer #4"
 msgstr ""
 
-#: classes/class-theme-setup.php:374
+#: classes/class-theme-setup.php:375
 msgid "Skip to the content"
 msgstr ""
 
