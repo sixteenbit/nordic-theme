@@ -315,42 +315,42 @@ if ( ! class_exists( 'NT_Theme_Setup' ) ) {
 		public static function body_class( $classes = array() ) {
 			$classes = (array) $classes; // Just in case...
 
-			// Singular page?
-			if ( is_singular() ) {
-				// For better custom styling.
-				$classes[] = 'is-singular';
+      // Singular page?
+      if ( is_singular() ) {
+        // For better custom styling.
+        $classes[] = 'is-singular';
 
-				// Has featured image?
-				if ( has_post_thumbnail() ) {
-					$classes[] = 'has-post-thumbnail';
-				} else {
-					$classes[] = 'missing-post-thumbnail';
-				}
-			} else {
-				// Add a class of hfeed to non-singular pages.
-				$classes[] = 'hfeed';
-			}
+        // Has featured image?
+        if ( has_post_thumbnail() ) {
+          $classes[] = 'has-post-thumbnail';
+        } else {
+          $classes[] = 'missing-post-thumbnail';
+        }
+      } else {
+        // Add a class of hfeed to non-singular pages.
+        $classes[] = 'hfeed';
+      }
 
-			// Has more than 1 published author?
-			if ( is_multi_author() ) {
-				$classes[] = 'group-blog';
-			}
+      // Has more than 1 published author?
+      if ( is_multi_author() ) {
+        $classes[] = 'group-blog';
+      }
 
-			// Slim page template class names (class = name - file suffix).
-			if ( is_page_template() ) {
-				$classes[] = basename( get_page_template_slug(), '.php' );
-			}
+      // Slim page template class names (class = name - file suffix).
+      if ( is_page_template() ) {
+        $classes[] = basename( get_page_template_slug(), '.php' );
+      }
 
-			// Renames sticky class.
-			if ( in_array( 'sticky', $classes, true ) ) {
-				$classes   = array_diff( $classes, array( 'sticky' ) );
-				$classes[] = 'sticky-post';
-			}
+      // Renames sticky class.
+      if ( in_array( 'sticky', $classes, true ) ) {
+        $classes   = array_diff( $classes, array( 'sticky' ) );
+        $classes[] = 'sticky-post';
+      }
 
-			// Sort classes alphabetically.
-			asort( $classes );
+      // Sort classes alphabetically.
+      asort( $classes );
 
-			return array_unique( $classes );
+      return array_unique( $classes );
 		}
 
 		/**

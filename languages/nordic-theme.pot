@@ -1,4 +1,4 @@
-# Copyright (C) 2020 nordic-theme
+# Copyright (C) 2021 nordic-theme
 # This file is distributed under the same license as the nordic-theme package.
 msgid ""
 msgstr ""

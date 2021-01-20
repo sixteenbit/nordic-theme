@@ -5,6 +5,7 @@ $footer-background: #141923 !default;
 $footer-copyright-color: #73757a !default;
 
 .site-footer {
+  @include clearfix();
   padding: rem-calc(24 0);
   background-color: $footer-background;
 
