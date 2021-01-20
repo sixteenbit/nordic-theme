@@ -15,7 +15,7 @@ define( 'NT_THEME_URL', get_template_directory_uri() );
  */
 require 'update-checker/plugin-update-checker.php';
 $NTUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-  'https://updates.sixteenbit.com/updates/?action=get_metadata&slug=nordic-theme',
+  'https://wordpress.sixteenbit.dev/updates/?action=get_metadata&slug=nordic-theme',
   __FILE__,
   'nordic-theme'
 );
